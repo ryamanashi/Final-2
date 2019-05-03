@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tokyo Map-Shibuya</title>
+	<meta name="title" content="Tokyo Map-Shibuya" />
+	<meta name="description" content="Introducing the area of Shibuya district" />
+	<link rel="image_src" href="/images/notify_better_image.png" />
+
+	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	<meta name="author" content="Rin Yamanashi.">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+    	height: 100% !important;
+      display: grid;
+      grid-gap: 20px;
+
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    
+    h1, h2 {
+      width: 100%;
+      float: left;
+    }
+    h1 {
+      margin-top: 10px;
+      color: #000;
+      margin-bottom: 5px;
+      font-size: 70px;
+      letter-spacing: -4px;
+      font-weight: 100;
+    }
+    h1 span {
+      font-size: 26px;
+      margin: 0 5px;
+      text-transform: capitalize;
+      background: rgba(0,0,0,0.85);
+      display: inline-block;
+      color: #6D461D;
+      border-radius: 5px 5px;
+      -webkit-border-radius: 5px 5px;
+      -moz-border-radius: 5px 5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+      padding: 3px 10px;
+    }
+    h2 {
+      color: #6D461D;
+      font-weight: 100;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    
+    .main {
+      width: 100%;
+    }
+    
+    .main h1 {
+      float: left;
+      width: 100%;
+      font-size: 45px;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      font-weight: 100;
+      color: white;
+      margin: 0;
+    }
+    
+   
+    .main section .page_container {
+      position: absolute;
+       top: 25%
+   
+    }
+  .main section.page1 .page_container{
+     max-width: 1000px;
+     z-index:1;
+      background-color: #f1f1f2
+     
+  }
+ 
+  
+    .main section.page1 {
+      background-image: url(Shibuya-1.jpg);
+      text-align: center;
+
+    }
+
+    .main section.page1 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 70px;
+      color: black;
+      align-self: center;
+
+    }
+    .main section.page1 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      margin-bottom: 100px;
+
+    } 
+    
+   .main section.page2 {
+    background: #d8d8d9;
+    }
+
+
+    .main section.page2 .page_container {
+    top: 5%;
+    align-content: center;
+    text-align: center;
+    }
+    
+    .main section.page2 h1 {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 15px;
+      font-size: 50px;
+      letter-spacing: -1px;
+      color: black;
+      margin-left: 60px
+    }
+    .main section.page2 h2 {
+      color: black;
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      margin-left: 80px;
+
+    }
+
+
+
+    .main section .page2 img {
+    width: auto;
+    height: auto;
+    }
+
+    h3 {
+    text-transform: none;
+      font-style: italic;
+      font-weight: 400;
+      font-family: noto serif;
+      letter-spacing: 1px;
+      font-size: 40px;
+      color: black;
+      padding-top: 90px;
+      background-color: white;
+
+    }
+      
+      .main section.page3 {
+      background-image: url("Shibuya-3.jpg");
+
+    }
+  
+    .main section.page3 .page_container {
+
+      overflow: hidden;
+      max-width: 600px;
+      width: 700px;
+      height:700px;
+      margin-bottom: 50PX;
+      top: 5%;
+      margin-left: 40px; 
+      border: solid;
+      background-color: #c2c2c3;
+     z-index:1;
+        }
+
+    .main section.page3 h1 {
+      text-align: left;
+      padding: 0;
+      font-size: 70px;
+      letter-spacing: -1px;
+      color: black;
+      margin-left: 50px;
+      margin: 20px;
+      
+    }
+    .main section.page3 h2 {
+      color: rgba(0,0,0,0.85);
+      text-align: center;
+      line-height: 160%;
+      font-weight: 100;
+      font-size: 21px;
+      margin-right: 10px
+      margin-left: 20px;
+    }
+
+     
+     .back {
+
+      position: absolute;
+
+      top: 0;
+
+      left: 0;
+
+      text-align: center;
+
+      display: block;
+
+      padding: 7px;
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      -moz-box-sizing: border-box;
+
+      -webkit-box-sizing: border-box;
+
+      background: rgba(255, 255, 255, 0.25);
+
+      font-weight: bold;
+
+      font-size: 13px;
+
+      color: #000;
+
+      -webkit-transition: all 500ms ease-in-out;
+
+      -moz-transition: all 500ms ease-in-out;
+
+      -o-transition: all 500ms ease-in-out;
+
+      transition: all 500ms ease-in-out;
+
+    }
+
+    .back:hover {
+
+      color: black;
+
+      background: rgba(255, 255, 255, 0.5);
+
+    }
+    .grid-1 {
+      width: 100%;
+
+       display: grid;
+      grid-template-columns: px 100px;
+       grid-gap: 20px;
+       grid-template-areas: 
+       "item-1   item-2"
+       "item-3   item-4";
+
+       text-align: center;
+
+     margin-left: 75px
+
+    }
+
+  
+
+
+    .item-1 {
+      display: grid;
+      background-image: url("crossing.jpg");
+
+      height: 300px;
+      width: 600px;
+      margin-left: 50px
+      
+    }
+
+    .item-2 {
+     display: grid; 
+     background-image: url("Hachiko.jpg");
+     height: 300px;
+      width: 600px;
+       margin-right: 50px
+       
+
+    }
+    .item-3 {
+    display: grid;
+    background-image: url("Game.jpg");
+    height: 300px;
+      width: 600px;
+      margin-left: 50px 
+     
+
+    }
+
+    .item-4 {
+    display: grid;
+    background-image: url("starbucks.jpg");
+    height: 300px;
+      width: 600px;
+      margin-right: 50px
+
+
+    }
+
+    background-image {
+    position: absolute;
+    background-size: auto;
+    width: auto;
+    height: auto;
+    }
+
+
+    /*Media Queries//////*/
+
+    @media (max-width: 300px){
+      .grid-1{
+      grid-template-areas: 
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4"
+      ;
+      grid-gap: 10px;
+
+      }
+    }
+
+
+    @media (max-width: 500px){
+    .grid-1 {
+    grid-template-areas: 
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    ;
+
+    grid-gap: 20px;
+
+    }
+    }
+
+  
+
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 100px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+          }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrapper">
+	  <div class="main">
+	    
+      <section class="page1">
+        <div class="page_container">
+          <h1>Shibuya</h1>
+          <article><h2>Representing modern and young culture of Japan, Shibuya is one of the most iconinc places in Tokyo that symbolize the dynamics of this gigantic metropolis. Chaotic Shibuya-crossing, Relaxing cafe, Energetic night life, the busiest Starbucks etc., you could find anything in this energetic place. It is always packed with locals and tourists who looking for something new.</article></h2>
+           <p><strong>#Hachiko, #Nightclub, #Crossing, #Starbucks, #Music</strong></p>
+         </div>
+        </section>
+	    
+      
+	    
+
+      <section class="page2">
+	      <div class="page_container">
+          <div class="header">
+          <h1>Sights</h1>
+          <h2>Shibuya has full of entertainments and iconic places you just have to visit</h2>
+        </div>
+          <div class="grid-1">
+          <div class="item-1"><a href="https://www.lonelyplanet.com/japan/tokyo/attractions/shibuya-crossing/a/poi-sig/396831/356817"><h3>Shibuya-Crossing</h3></a></div>
+          <div class="item-2"><a href="https://nerdnomads.com/hachiko_the_dog"><h3>Hachiko</h3></a></div>
+          <div class="item-3"><a href="https://www.yelp.com/search?cflt=arcades&find_loc=Shibuya%2C+%E6%9D%B1%E4%BA%AC%E9%83%BD"><h3>Club SEGA</h3></a></div>
+          <div class="item-4"><a href="https://www.starbucks.co.jp/en/search/detail.php?id=2003&search_condition=Tokyo&pref_code=13"><h3>Starbucks TSUTAYA</h3></a></div>
+          
+         </div>
+        </div>
+          </section>
+      
+
+          <section class="page3">
+        <div class="page_container">
+          <div class="article">
+          <h1>Why should you visit Shibuya?</h1>
+          <h2>Shibuya has so many experiences to offer to foreign tourists who are not used the craze of modern Tokyo. <strong>Shibuya Crossing </strong> is one of the biggest and busiest crossing with millions of people use everyday. Right behind the crossing, <strong>TSUTAYA </strong> has officially the busiest Starbucks in the world where you could view all people moving in the crossing. If you like any genres of music to shop, <strong>TowerRecords</strong> have diverse music from all over the world. A fan of arcade games? Enjoy classic and new games in <strong>Club SEGA Shibuya</strong>. Wants to enjoy the nightlife? Have some great time in various nightclubs in Center Arcade! Shibuya is a gate for everything you are looking for.</h2>
+          </div>
+
+
+          </div>
+        </div>
+      </section> 
+          
+          
+	      </div>
+     
+	    
+    </div>
+    <a class="back" href="index.html">Home</a>
+  </div>
+
+</body>
+</html>
